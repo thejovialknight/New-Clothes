@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Khaki Shorts
+  m_Controller: {fileID: 9100000, guid: 7348fc944771ecf4fb79b2f11e31dc3b, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 558e0e4b666ae7b4da013341362a9551, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a680f5304ebdd0946a4e9333abd0428f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f780cca0c194c724d9e46546c0013163, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6abe25df6e421fc4498e66b21c542dfb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2891c8982552ada4da0ebe8278e53e21, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f515ce5a25f6bd24a8a1f638d9359cd5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 36521c349f3258c428c8376e2cc6b187, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2a58c75f6bb56fe48adecc1aff571708, type: 2}
