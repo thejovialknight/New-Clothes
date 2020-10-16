@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DebugAddOnStart : MonoBehaviour
 {
-    public ClothingItem itemToAdd;
+    public Item itemToAdd;
 
     public bool add = false;
 
@@ -13,7 +13,7 @@ public class DebugAddOnStart : MonoBehaviour
     {
         if(add)
         {
-            GetComponent<ClothingInventory>().AddToInventory(itemToAdd);
+            GetComponent<Inventory>().AddToInventory(itemToAdd);
             add = false;
         }
     }

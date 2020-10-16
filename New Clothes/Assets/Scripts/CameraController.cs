@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public Camera cam;
     public Transform player;
     public CameraBounds bounds;
     public float speed = 4f;
     public Vector3 target;
+
+    public bool isYOverride;
+    public float yOverride;
+    public bool isXOverride;
+    public float xOverride;
 
     public static CameraController Instance;
 
@@ -33,12 +39,41 @@ public class CameraController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        cam = GetComponent<Camera>();
+    }
+
+    void OnEnable()
+    {
+        LevelManager.onInit += OnLoad;
+    }
+
+    void OnDisable()
+    {
+        LevelManager.onInit -= OnLoad;
+    }
+
+    void OnLoad()
+    {
+        LevelManager.Instance.RegisterCamera(this);
     }
 
     void Update()
     {
+        bounds = LevelManager.Instance.playerLocation.cameraBounds;
+
         SetTarget();
         transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * speed);
+
+        if(isYOverride)
+        {
+            transform.position = new Vector3(transform.position.x, yOverride, transform.position.z);
+        }
+
+        if (isXOverride)
+        {
+            transform.position = new Vector3(xOverride, transform.position.y, transform.position.z);
+        }
     }
 
     void SetTarget()

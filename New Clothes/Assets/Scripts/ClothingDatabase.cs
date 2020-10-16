@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClothingDatabase : MonoBehaviour
 {
-    public List<ClothingItem> items = new List<ClothingItem>();
+    public List<Item> items = new List<Item>();
 
     public static ClothingDatabase Instance;
 
@@ -21,10 +21,10 @@ public class ClothingDatabase : MonoBehaviour
         }
     }
 
-    public ClothingItem[] ItemsOfSlot(ClothingSlot slot)
+    public Item[] ItemsOfSlot(Slot slot)
     {
-        List<ClothingItem> itemsOfSlot = new List<ClothingItem>();
-        foreach(ClothingItem item in items)
+        List<Item> itemsOfSlot = new List<Item>();
+        foreach(Item item in items)
         {
             if(item.slot == slot)
             {
@@ -35,9 +35,9 @@ public class ClothingDatabase : MonoBehaviour
         return itemsOfSlot.ToArray();
     }
 
-    public ClothingItem ItemFromTag(string tag)
+    public Item ItemFromTag(string tag)
     {
-        foreach (ClothingItem item in items)
+        foreach (Item item in items)
         {
             if (item.tag == tag)
             {

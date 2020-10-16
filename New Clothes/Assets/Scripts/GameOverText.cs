@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameOverText : MonoBehaviour
 {
-    public ClothingInventory playerInventory;
+    public Inventory playerInventory;
     public float cooldown = 0f;
     public string currentText = "";
     public bool isOn = false;
@@ -57,15 +57,13 @@ public class GameOverText : MonoBehaviour
         // }
     }
 
-    public void OnAddItem(ClothingItem item)
+    public void OnAddItem(Item item)
     {
-        Debug.Log("It added");
         currentText = item.label.ToUpper() + " FOUND!";
     }
 
     public void OnAddItemFinished()
     {
-        Debug.Log("It dun added");
         currentText = "";
     }
 

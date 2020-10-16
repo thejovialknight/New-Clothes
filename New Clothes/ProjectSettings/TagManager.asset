@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Climb Entrance
+  - Light
   layers:
   - Default
   - TransparentFX
@@ -55,4 +57,28 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1525278443
+    locked: 0
+  - name: Shadow 2
+    uniqueID: 1427216463
+    locked: 0
+  - name: Room Blackout
+    uniqueID: 2511913977
+    locked: 0
+  - name: Room 1
+    uniqueID: 3263001065
+    locked: 0
+  - name: Room 2
+    uniqueID: 3539246733
+    locked: 0
+  - name: Room 3
+    uniqueID: 3130890143
+    locked: 0
+  - name: Room 4
+    uniqueID: 2954382469
+    locked: 0
+  - name: Room 5
+    uniqueID: 614144519
+    locked: 0
+  - name: Room 6
+    uniqueID: 3361972215
     locked: 0

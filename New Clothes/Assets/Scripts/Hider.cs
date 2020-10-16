@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Hider : Interactor
 {
+    /*
     public bool isHidden;
     float gravityScale;
 
@@ -49,6 +50,7 @@ public class Hider : Interactor
         engine.enabled = false;
         animator.SetTrigger("Hide");
         RaiseOnHideEnter();
+        LevelManager.Instance.playerStealth.SetModifier("Hidden", 100f);
         isHidden = true;
     }
 
@@ -59,6 +61,7 @@ public class Hider : Interactor
         engine.enabled = true;
         animator.SetTrigger("HideExit");
         RaiseOnHideExit();
+        LevelManager.Instance.playerStealth.SetModifier("Hidden", 0f);
         isHidden = false;
     }
 
@@ -80,4 +83,5 @@ public class Hider : Interactor
             onHideExit();
         }
     }
+    */
 }

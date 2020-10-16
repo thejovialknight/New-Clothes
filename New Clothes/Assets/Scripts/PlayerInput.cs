@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
+    RadiusInteractor interactor;
     CharacterEngine engine;
+    Climber climber;
 
     void Awake()
     {
+        interactor = GetComponent<RadiusInteractor>();
         engine = GetComponent<CharacterEngine>();
+        climber = GetComponent<Climber>();
     }
 
     void OnEnable()
@@ -43,9 +47,16 @@ public class PlayerInput : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            engine.Jump();
+            //engine.Jump();
+        }
+
+        if(Input.GetButtonDown("Interact"))
+        {
+            interactor.Interact();
         }
 
         engine.SetHorizontalMovement(Input.GetAxisRaw("Horizontal"));
+        climber.SetVerticalMovement(Input.GetAxisRaw("Vertical"));
+        climber.SetHorizontalMovement(Input.GetAxisRaw("Horizontal"));
     }
 }

@@ -3,24 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterEngine))]
-public class Patrol : MonoBehaviour
+public class Patrol : AIBehaviour
 {
     public float timerAtFinal = 60f;
 
-    public float minIdleLength = 2f;
-    public float maxIdleLength = 4f;
-    public float minWalkLength = 0.5f;
-    public float maxWalkLength = 1f;
-
-    public float finalMinIdleLength = 0.5f;
-    public float finalMaxIdleLength = 1f;
-    public float finalMinWalkLength = 1f;
-    public float finalMaxWalkLength = 3f;
-
-    public float curMinIdleLength;
-    public float curMaxIdleLength;
-    public float curMinWalkLength;
-    public float curMaxWalkLength;
+    public PatrolSettings settings;
 
     float cooldown;
 
@@ -31,14 +18,16 @@ public class Patrol : MonoBehaviour
     {
         engine = GetComponent<CharacterEngine>();
         los = GetComponent<LineOfSight>();
+
+        label = "Patrol";
     }
 
-    void Update()
+    public override void Tick()
     {
-        curMinIdleLength = CurrentLength(minIdleLength, finalMinIdleLength);
-        curMaxIdleLength = CurrentLength(maxIdleLength, finalMaxIdleLength);
-        curMinWalkLength = CurrentLength(minWalkLength, finalMinWalkLength);
-        curMaxWalkLength = CurrentLength(maxWalkLength, finalMaxWalkLength);
+        settings.curMinIdleLength = CurrentLength(settings.minIdleLength, settings.finalMinIdleLength);
+        settings.curMaxIdleLength = CurrentLength(settings.maxIdleLength, settings.finalMaxIdleLength);
+        settings.curMinWalkLength = CurrentLength(settings.minWalkLength, settings.finalMinWalkLength);
+        settings.curMaxWalkLength = CurrentLength(settings.maxWalkLength, settings.finalMaxWalkLength);
 
         if (LevelManager.Instance.InGameAndRunning())
         {
@@ -46,7 +35,7 @@ public class Patrol : MonoBehaviour
             if (cooldown <= 0f)
             {
                 if(engine.xMovement == 0f) {
-                    cooldown = Random.Range(curMinWalkLength, curMaxWalkLength);
+                    cooldown = Random.Range(settings.curMinWalkLength, settings.curMaxWalkLength);
                     int decision = Random.Range(0, 2);
                     switch (decision)
                     {
@@ -62,7 +51,7 @@ public class Patrol : MonoBehaviour
                 }
                 else
                 {
-                    cooldown = Random.Range(curMinIdleLength, curMaxIdleLength);
+                    cooldown = Random.Range(settings.curMinIdleLength, settings.curMaxIdleLength);
                     engine.SetHorizontalMovement(0f);
                 }
 

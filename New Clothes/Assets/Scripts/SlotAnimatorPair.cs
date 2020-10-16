@@ -5,10 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class SlotAnimatorPair
 {
-    public ClothingSlot slot;
+    public Slot slot;
     public Animator animator;
 
-    public SlotAnimatorPair(ClothingSlot slot, Animator animator)
+    public SlotAnimatorPair(Slot slot, Animator animator)
     {
         this.slot = slot;
         this.animator = animator;

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Opener : Interactor
 {
-    ClothingInventory inventory;
+    /*
+    Inventory inventory;
 
     public override bool Interact(Transform target)
     {
-        ClothingContainer container = target.GetComponent<ClothingContainer>();
+        Container container = target.GetComponent<Container>();
         if(container != null)
         {
             if(container.Open() && container.contained != null && inventory != null && !inventory.SlotFilled(container.contained))
@@ -23,6 +24,7 @@ public class Opener : Interactor
 
     void Awake()
     {
-        inventory = GetComponent<ClothingInventory>();
+        inventory = GetComponent<Inventory>();
     }
+    */
 }

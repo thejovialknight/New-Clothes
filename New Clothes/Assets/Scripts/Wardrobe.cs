@@ -5,13 +5,13 @@ using UnityEngine;
 public class Wardrobe : MonoBehaviour
 {
     [Header("State Data")]
-    public List<ClothingItem> unlocked = new List<ClothingItem>();
+    public List<Item> unlocked = new List<Item>();
 
     public static Wardrobe Instance;
 
-    public void SetItemFound(ClothingItem item)
+    public void SetItemFound(Item item)
     {
-        foreach (ClothingItem i in unlocked)
+        foreach (Item i in unlocked)
         {
             if (i.tag == item.tag)
             {
@@ -56,7 +56,7 @@ public class Wardrobe : MonoBehaviour
     void OnSave()
     {
         List<string> tags = new List<string>();
-        foreach (ClothingItem item in unlocked)
+        foreach (Item item in unlocked)
         {
             tags.Add(item.tag);
         }
@@ -70,7 +70,7 @@ public class Wardrobe : MonoBehaviour
 
         foreach (string tag in save.unlockedItemTags)
         {
-            ClothingItem itemToAdd = ClothingDatabase.Instance.ItemFromTag(tag);
+            Item itemToAdd = ClothingDatabase.Instance.ItemFromTag(tag);
             if (itemToAdd != null)
             {
                 unlocked.Add(itemToAdd);

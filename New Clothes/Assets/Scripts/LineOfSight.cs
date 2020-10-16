@@ -76,7 +76,7 @@ public class LineOfSight : MonoBehaviour
         {
             if (obj.gameObject.tag == "Player")
             {
-                if (!obj.GetComponent<Hider>().Hidden())
+                if (LevelManager.Instance.playerStealth.Rating() < 8f)
                 {
                     return true;
                 }

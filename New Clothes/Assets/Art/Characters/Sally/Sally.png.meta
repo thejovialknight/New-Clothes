@@ -38,8 +38,74 @@ TextureImporter:
   - first:
       213: -6355007212168114658
     second: Sally_11
+  - first:
+      213: 3128037993327952445
+    second: Sally_0
+  - first:
+      213: -4283898944395242621
+    second: Sally_1
+  - first:
+      213: 8330828207663273391
+    second: Sally_2
+  - first:
+      213: 5943867351029718179
+    second: Sally_3
+  - first:
+      213: 8581587900831105587
+    second: Sally_4
+  - first:
+      213: 8260489031486715228
+    second: Sally_5
+  - first:
+      213: 5105323712411446242
+    second: Sally_6
+  - first:
+      213: 549132730375715385
+    second: Sally_7
+  - first:
+      213: 6029299513831937341
+    second: Sally_8
+  - first:
+      213: 4445370855753660832
+    second: Sally_9
+  - first:
+      213: -6675888667166988116
+    second: Sally_10
+  - first:
+      213: 6495654912116664086
+    second: Sally_11
+  - first:
+      213: -1584476544391550814
+    second: Sally_12
+  - first:
+      213: -6733524588909523216
+    second: Sally_13
+  - first:
+      213: -8170271395013801060
+    second: Sally_14
+  - first:
+      213: 6843972880228043072
+    second: Sally_15
+  - first:
+      213: -7119028715955051071
+    second: Sally_16
+  - first:
+      213: 1723234390108982492
+    second: Sally_17
+  - first:
+      213: -1202978419737071400
+    second: Sally_18
+  - first:
+      213: 5613128993784982405
+    second: Sally_19
+  - first:
+      213: -3137160881126889326
+    second: Sally_20
+  - first:
+      213: 6295084796243185772
+    second: Sally_21
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -93,7 +159,6 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -127,7 +192,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 24
+        y: 60
         width: 12
         height: 12
       alignment: 0
@@ -137,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252319e51b6e9f380800000000000000
-      internalID: -8936858336069864878
+      spriteID: d320d3c5bf5096b20800000000000000
+      internalID: 3128037993327952445
       vertices: []
       indices: 
       edges: []
@@ -148,7 +213,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12
-        y: 24
+        y: 60
         width: 12
         height: 12
       alignment: 0
@@ -158,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbe7360dc5b80c5e0800000000000000
-      internalID: -1891358612746174788
+      spriteID: 38396ad6b988c84c0800000000000000
+      internalID: -4283898944395242621
       vertices: []
       indices: 
       edges: []
@@ -169,7 +234,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 24
+        y: 60
         width: 12
         height: 12
       alignment: 0
@@ -179,8 +244,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 357d485290fdd35f0800000000000000
-      internalID: -775218330460694701
+      spriteID: fa5d292cd1c0d9370800000000000000
+      internalID: 8330828207663273391
       vertices: []
       indices: 
       edges: []
@@ -190,6 +255,195 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 36
+        y: 60
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac1b222ddbdc7250800000000000000
+      internalID: 5943867351029718179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33204d58abce71770800000000000000
+      internalID: 8581587900831105587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 48
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55b6c8120723a270800000000000000
+      internalID: 8260489031486715228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eba9a50ed0c9d640800000000000000
+      internalID: 5105323712411446242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 48
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ab5901f49ee9700800000000000000
+      internalID: 549132730375715385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35536696ff5ca350800000000000000
+      internalID: 6029299513831937341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_9
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 36
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a93210ad3121bd30800000000000000
+      internalID: 4445370855753660832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 36
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8a479a0aa7a53a0800000000000000
+      internalID: -6675888667166988116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_11
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6172c342ab3352a50800000000000000
+      internalID: 6495654912116664086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_12
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 24
         width: 12
         height: 12
@@ -200,14 +454,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9367232df69d1d70800000000000000
-      internalID: 9015528043026277276
+      spriteID: 2a86a905afec20ae0800000000000000
+      internalID: -1584476544391550814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sally_4
+      name: Sally_13
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 24
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe80b7ef07bd82a0800000000000000
+      internalID: -6733524588909523216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_14
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bcaa5447d5d9e80800000000000000
+      internalID: -8170271395013801060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_15
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 24
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049466ad21daafe50800000000000000
+      internalID: 6843972880228043072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sally_16
       rect:
         serializedVersion: 2
         x: 0
@@ -221,14 +538,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 793c4a298d269e980800000000000000
-      internalID: -8509161338627112041
+      spriteID: 1c5a1bfd911243d90800000000000000
+      internalID: -7119028715955051071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sally_5
+      name: Sally_17
       rect:
         serializedVersion: 2
         x: 12
@@ -242,14 +559,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0609714d448ffc70800000000000000
-      internalID: 9007063247110080010
+      spriteID: cdcce273c882ae710800000000000000
+      internalID: 1723234390108982492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sally_6
+      name: Sally_18
       rect:
         serializedVersion: 2
         x: 24
@@ -263,14 +580,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9980aa8233a86e00800000000000000
-      internalID: 1038259151578368413
+      spriteID: 8d07c1b30892e4fe0800000000000000
+      internalID: -1202978419737071400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sally_7
+      name: Sally_19
       rect:
         serializedVersion: 2
         x: 36
@@ -284,14 +601,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdad4fa2cdd45e800800000000000000
-      internalID: 641004129978997468
+      spriteID: 58beff88417d5ed40800000000000000
+      internalID: 5613128993784982405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sally_8
+      name: Sally_20
       rect:
         serializedVersion: 2
         x: 0
@@ -305,14 +622,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05e0f6493f6218d00800000000000000
-      internalID: 973101822097952336
+      spriteID: 2982e2dccc09674d0800000000000000
+      internalID: -3137160881126889326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sally_9
+      name: Sally_21
       rect:
         serializedVersion: 2
         x: 12
@@ -326,50 +643,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ce038b6afe509120800000000000000
-      internalID: 2418537429536542400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sally_10
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27f9a10b0dc782c30800000000000000
-      internalID: 4334851877093678962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sally_11
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 0
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1e8cad5c9a7ec7a0800000000000000
-      internalID: -6355007212168114658
+      spriteID: c609907f442ac5750800000000000000
+      internalID: 6295084796243185772
       vertices: []
       indices: 
       edges: []

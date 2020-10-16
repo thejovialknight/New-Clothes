@@ -8,13 +8,18 @@ public class LevelManager : MonoBehaviour
     public PauseInfo pauseInfo;
     public LevelState state = LevelState.PreLoad;
     public float timeElapsed = 0f;
+    public Room playerLocation;
+    public float playerFloorLevel = 1f;
+    public CameraController cam;
 
     [Header("Level Settings")]
     public int clothesRequiredToWin;
 
     [Header("References")]
     public Transform playerTransform;
-    public List<ClothingContainer> containers = new List<ClothingContainer>();
+    public List<AIController> AIs = new List<AIController>();
+    public List<Container> containers = new List<Container>();
+    public List<Room> rooms = new List<Room>();
 
     [Header("Assets")]
     public AudioClip foundItemSound;
@@ -32,6 +37,8 @@ public class LevelManager : MonoBehaviour
     public static event OnPause onSetPause;
 
     public static LevelManager Instance;
+
+    public Stealth playerStealth;
 
     void Awake()
     {
@@ -98,14 +105,30 @@ public class LevelManager : MonoBehaviour
         RaiseOnEndGame(isWin);
     }
 
+    public void RegisterCamera(CameraController cam)
+    {
+        this.cam = cam;
+    }
+
     public void RegisterPlayerTransform(Transform player)
     {
         this.playerTransform = player;
+        playerStealth = player.GetComponent<Stealth>();
     }
 
-    public void RegisterContainer(ClothingContainer container)
+    public void RegisterAIController(AIController controller)
+    {
+        AIs.Add(controller);
+    }
+
+    public void RegisterContainer(Container container)
     {
         containers.Add(container);
+    }
+
+    public void RegisterRoom(Room room)
+    {
+        rooms.Add(room);
     }
 
     public void TogglePause()

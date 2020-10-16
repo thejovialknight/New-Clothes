@@ -1,4 +1,4 @@
-﻿public enum ClothingSlot
+﻿public enum Slot
 {
     Torso,
     Legs
