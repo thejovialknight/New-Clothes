@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WanderForLight : AIBehaviour
+public class WanderForLight : AIBehavior
 {
+    /*
     public float wanderSpeed = 1f;
 
     public float previousRunSpeed;
@@ -49,7 +50,7 @@ public class WanderForLight : AIBehaviour
         patrol.settings = previousPatrolSettings;
     }
 
-    public override void Tick()
+    public override BehaviorNodeState Tick()
     {
         if(interactor.targetTransform != null && interactor.targetTransform.CompareTag("Light"))
         {
@@ -72,4 +73,5 @@ public class WanderForLight : AIBehaviour
             controller.SetBehaviourOn(label, true);
         }
     }
+    */
 }

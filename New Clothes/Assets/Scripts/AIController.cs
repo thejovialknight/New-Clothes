@@ -5,16 +5,18 @@ using UnityEngine;
 
 public class AIController : MonoBehaviour
 {
+    public Selector rootNode;
+
     public AIStateMachine machine;
 
     // TODO: AUTO POPULATE THIS JUST LIKE USED TO DO INTERACTORS WHEN THAT WAS A LIST
-    public List<AIBehaviour> behaviours = new List<AIBehaviour>();
+    public List<AIBehavior> behaviours = new List<AIBehavior>();
 
     public Stealth stealth;
 
     public void SetBehaviourOn(string label, bool isOn)
     {
-        foreach(AIBehaviour behaviour in behaviours)
+        foreach(AIBehavior behaviour in behaviours)
         {
             if(behaviour.label == label)
             {
@@ -36,11 +38,11 @@ public class AIController : MonoBehaviour
 
     void Awake()
     {
-        behaviours = GetComponents<AIBehaviour>().ToList();
+        behaviours = GetComponents<AIBehavior>().ToList();
 
-        foreach (AIBehaviour behaviour in behaviours)
+        foreach (AIBehavior behaviour in behaviours)
         {
-            behaviour.Init(this);
+            // behaviour.Init(this);
         }
 
         stealth = GetComponent<Stealth>();
@@ -48,6 +50,9 @@ public class AIController : MonoBehaviour
 
     void Update()
     {
+        rootNode.Evaluate();
+
+        /*
         foreach (AIBehaviour behaviour in behaviours)
         {
             behaviour.InactiveTick();
@@ -56,6 +61,7 @@ public class AIController : MonoBehaviour
                 behaviour.Tick();
             }
         }
+        */
     }
 
     void OnEnable()

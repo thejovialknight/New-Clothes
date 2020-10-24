@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterEngine))]
-public class Patrol : AIBehaviour
+public class Patrol : AIBehavior
 {
+    /*
     public float timerAtFinal = 60f;
 
     public PatrolSettings settings;
@@ -22,7 +23,7 @@ public class Patrol : AIBehaviour
         label = "Patrol";
     }
 
-    public override void Tick()
+    public override BehaviorNodeState Tick()
     {
         settings.curMinIdleLength = CurrentLength(settings.minIdleLength, settings.finalMinIdleLength);
         settings.curMaxIdleLength = CurrentLength(settings.maxIdleLength, settings.finalMaxIdleLength);
@@ -73,4 +74,5 @@ public class Patrol : AIBehaviour
     {
         return Mathf.Lerp(startingValue, finalValue, LevelManager.Instance.timeElapsed / timerAtFinal);
     }
+    */
 }
