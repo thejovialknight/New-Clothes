@@ -17,7 +17,6 @@ public class LevelManager : MonoBehaviour
 
     [Header("References")]
     public Transform playerTransform;
-    public List<AIController> AIs = new List<AIController>();
     public List<Container> containers = new List<Container>();
     public List<Room> rooms = new List<Room>();
 
@@ -114,11 +113,6 @@ public class LevelManager : MonoBehaviour
     {
         this.playerTransform = player;
         playerStealth = player.GetComponent<Stealth>();
-    }
-
-    public void RegisterAIController(AIController controller)
-    {
-        AIs.Add(controller);
     }
 
     public void RegisterContainer(Container container)

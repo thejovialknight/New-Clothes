@@ -29,10 +29,12 @@ public class LightRadius : MonoBehaviour
         nearby.Clear();
         CheckAgent(LevelManager.Instance.playerStealth);
 
+        /*
         foreach (AIController ai in LevelManager.Instance.AIs)
         {
             CheckAgent(ai.stealth);
         }
+        */
     }
 
     void CheckAgent(Stealth stealth)
